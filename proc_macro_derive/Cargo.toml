@@ -1,0 +1,15 @@
+[package]
+name = "proc_macro_derive"
+version = "0.1.0"
+authors = ["Antoni Boucher <bouanto@zoho.com>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0"
+
+[dependencies.syn]
+features = ["extra-traits", "fold", "full", "visit"]
+version = "1.0"
